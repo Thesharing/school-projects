@@ -2,24 +2,21 @@
 
 ## 目录
 
-* 课程项目
+* [课程项目](#课程项目)
+       * [GSM移动通信网络配置数据库管理系统](#GSM移动通信网络配置数据库管理系统)
+       * [分布式空调管理系统](#分布式空调管理系统)
+       * [图书管理系统](#图书管理系统)
+       * [电子商务系统](#电子商务系统)
+       * [学生学籍管理系统](#学生学籍管理系统)
+       * [旅馆管理系统](#旅馆管理系统)
+       * [电梯模拟程序](#电梯模拟程序)
 
-        * GSM移动通信网络配置数据库管理系统
-
-        * 分布式空调管理系统
-
-        * 图书管理系统
-
-        * 电子商务系统
-
-        * 学生学籍管理系统
-
-        * 旅馆管理系统
-
-        * 电梯模拟程序
-
-* 作业
-
+* [作业](#作业)
+       * [算法设计与分析](#算法设计与分析)
+       * [编译原理](#编译原理)
+       * [计算机网络](#计算机网络)
+       * [操作系统](#操作系统)
+       * [自然语言处理](#自然语言处理)
 
 # 课程项目
 
@@ -27,7 +24,7 @@
 
 大三下学期 数据库系统概念课程设计
 
-语言：C#
+### 语言：C#
 
 平台：WPF
 
@@ -43,7 +40,7 @@
 
 评分：90
 
-[查看更多](#home)
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/GSM%20Database%20Management)
 
 ## 分布式空调管理系统
 
@@ -65,7 +62,7 @@
 
 评分：90
 
-[查看更多](#home)
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/Air%20Condition%20System)
 
 ## 图书管理系统
 
@@ -87,8 +84,7 @@
 
 评分：90
 
-![界面1](http://7xr64j.com1.z0.glb.clouddn.com/school-project/bookstore/display3.png)
-
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/Book%20Store)
 
 ## 电子商务系统
 
@@ -110,7 +106,7 @@
 
 评分：85
 
-![商店界面](http://7xr64j.com1.z0.glb.clouddn.com/school-project/ecommerce/2.png)
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/Online%20Store)
 
 ## 学生学籍管理系统
 
@@ -128,7 +124,7 @@
 
 评分：91
 
-![学生学籍管理系统](http://7xr64j.com1.z0.glb.clouddn.com/school-project/assemble/main.png)
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/Student%20Management)
 
 ## 旅馆管理系统
 
@@ -146,7 +142,7 @@
 
 评分：95
 
-![程序界面](http://7xr64j.com1.z0.glb.clouddn.com/school-project/hotel/Main.png)
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/Hotel%20Management)
 
 ## 电梯模拟程序
 
@@ -168,7 +164,7 @@
 
 评分：98
 
-![程序界面](http://7xr64j.com1.z0.glb.clouddn.com/school-project/elevator/Main.jpg)
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Project/Elevator%20Simulator)
 
 
 # 作业
@@ -202,20 +198,28 @@
 * 图的M着色问题
 * 旅行商问题
 
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Algorithm%20Analysis%20and%20Disign)
+
 ## 编译原理
 
 * 词法分析
 * 语法分析
 * 语义分析
 
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Compile%20Principle)
+
 ## 计算机网络
 
 * 选择重传协议
+
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Computer%20Network)
 
 ## 操作系统
 
 * 多线程计算斐波那契数列
 * 模拟FIFO和LFU页交换
+
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Concept%20of%20Operating%20System)
 
 ## 自然语言处理
 
@@ -223,3 +227,5 @@
 * N-Gram模型
 * 词性标注
 * 文本分类
+
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Natural%20Language%20Processing)
