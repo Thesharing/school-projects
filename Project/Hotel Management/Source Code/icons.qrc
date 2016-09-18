@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>hotel.jpg</file>
+        <file>icons/book.png</file>
+        <file>icons/bookin.png</file>
+        <file>icons/bookout.png</file>
+        <file>icons/checkin.png</file>
+        <file>icons/checkout.png</file>
+        <file>icons/consume.png</file>
+        <file>icons/consumer.png</file>
+        <file>icons/log.png</file>
+        <file>icons/phone.png</file>
+        <file>icons/room.png</file>
+        <file>icons/stastic.png</file>
+        <file>icons/help.png</file>
+        <file>icons/icon.png</file>
+        <file>icons/open.png</file>
+        <file>icons/save.png</file>
+        <file>icons/setting.png</file>
+        <file>icons/exit.png</file>
+        <file>icons/cookie.png</file>
+        <file>icons/dinner.png</file>
+        <file>icons/fruit.png</file>
+        <file>icons/noodle.png</file>
+        <file>icons/water.png</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>image/splash.jpg</file>
+    </qresource>
+</RCC>

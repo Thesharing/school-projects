@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>Icon/setting.png</file>
+        <file>Icon/account.png</file>
+        <file>Icon/checkout.png</file>
+        <file>Icon/poweron.png</file>
+        <file>Icon/register.png</file>
+        <file>Icon/report.png</file>
+        <file>Icon/main.png</file>
+        <file>Icon/account_yellow.png</file>
+        <file>Icon/checkout_yellow.png</file>
+        <file>Icon/register_yellow.png</file>
+        <file>Icon/report_yellow.png</file>
+        <file>Icon/setting_yellow.png</file>
+    </qresource>
+</RCC>

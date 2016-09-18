@@ -1,0 +1,60 @@
+﻿<Window x:Class="GSM_DB.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GSM_DB"
+        mc:Ignorable="d"
+        Title="About" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#0063b1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="3*" />
+                </Grid.RowDefinitions>
+                <Image Source="Header.png" Stretch="Fill" MouseMove="Image_MouseMove"/>
+                <TextBlock Text="GSM网络话务分析系统" Foreground="White" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="24"/>
+                <Button x:Name="buttonClose" Height="20" Width="20"
+                        Background="Transparent" BorderBrush="Transparent" 
+                        Click="buttonClose_Click" Margin="0,10,20,0"
+                        VerticalAlignment="Top" HorizontalAlignment="Right">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="CloseIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="buttonMinimize" Height="20" Width="20" 
+                        Background="Transparent" BorderBrush="Transparent" 
+                        VerticalAlignment="Top" HorizontalAlignment="Right"
+                        Click="buttonMinimize_Click" Margin="0,10,50,0">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="MinimizeIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Image Grid.Row="1" Source="icon.png" />
+                <TextBlock Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center" LineHeight="20">
+                    GSM网络话务分析系统
+                    <LineBreak />
+                    <LineBreak />
+                    洪志龙 何溪流 黄天烁
+                    <LineBreak />
+                    <LineBreak />
+                    Using WPFAnimatedGIF by thomaslevesque
+                    <LineBreak />
+                    <LineBreak />
+                    2016 © 
+                </TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

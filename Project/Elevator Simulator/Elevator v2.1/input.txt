@@ -1,0 +1,9 @@
+T=1,CallF=2U
+T=2,CallF=4U|5T
+T=5,CallF=3D|6T|0c
+T=8,CallF=3U|4T
+T=13,CallF=6U|8T|7D
+T=15,CallF=0c
+T=23,CallF=0o
+T=27,CallF=0o
+T=33,CallF=5U

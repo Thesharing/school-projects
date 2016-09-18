@@ -1,0 +1,120 @@
+﻿<Window x:Class="GSM_DB.InqueryQuarterTrafficInfoPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GSM_DB"
+        mc:Ignorable="d"
+        Title="刻钟级查询" 
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Height="500" Width="600">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#0063b1">
+            <Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="Header.png" Stretch="Fill" MouseMove="Image_MouseMove"/>
+                    <Button x:Name="buttonClose" Height="20" Width="20"
+                        Background="Transparent" BorderBrush="Transparent" Click="buttonClose_Click" Margin="558,10,20,169">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Image Source="CloseIcon-White.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="buttonMinimize" Height="20" Width="20" 
+                        Background="Transparent" BorderBrush="Transparent" Click="buttonMinimize_Click" Margin="528,10,50,169">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Image Source="MinimizeIcon-White.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock Text="刻钟级查询" Foreground="White" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"
+                           FontSize="36"/>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Content="小区编号："
+                       HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <ComboBox Grid.Column="1" Name="comboBoxCellID" 
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Center" 
+                          Width="100" Height="24"
+                          Grid.ColumnSpan="2"/>
+                        <Label Grid.Column="2" Content="查看属性："
+                       HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <ComboBox Grid.Column="3" Name="comboBoxType" 
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Center" 
+                          Width="100" Height="24"
+                          Grid.ColumnSpan="2" SelectedIndex="0">
+                            <ComboBoxItem Content="平均话务量" HorizontalAlignment="Left" Width="99"/>
+                            <ComboBoxItem Content="每线话务量" HorizontalAlignment="Left" Width="99"/>
+                            <ComboBoxItem Content="拥塞率" HorizontalAlignment="Left" Width="99"/>
+                            <ComboBoxItem Content="半速率话务比例" HorizontalAlignment="Left" Width="99"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <DatePicker Name="dataPicker" Grid.Column="0" Width="150" Height="24" 
+                                    BorderBrush="#0063b1"/>
+                        <TextBlock Text="起始时间：" TextAlignment="Right" Width="100" Height="20" Grid.Column="1" />
+                        <xctk:DateTimeUpDown Name="timePickerPrev" Grid.Column="2" 
+                                     Width="80" Height="24"
+                                     Format="ShortTime" BorderBrush="#0063b1"/>
+                        <TextBlock Text="终止时间：" TextAlignment="Right" Width="100" Height="20" Grid.Column="3" />
+                        <xctk:DateTimeUpDown Name="timePickerNext" Grid.Column="4" 
+                                     Width="80" Height="24"
+                                     Format="ShortTime" BorderBrush="#0063b1"/>
+                    </Grid>
+                    <Button Name="buttonOk"  Grid.Row="3"
+                    Content="确定" Style="{StaticResource functionButton}"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Height="24" Width="100"
+                    Click="buttonOk_Click"/>
+                </Grid>
+                <Grid Name="grid" Background="White" Visibility="Collapsed">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <chartingToolkit:Chart Name="chart" 
+                                   Grid.Row="0"
+                                   Title="Line" BorderBrush="Transparent" 
+                                   VerticalAlignment="Top" Height="400">
+                        <chartingToolkit:AreaSeries Name="series"  
+                                        ItemsSource="{Binding}" 
+                                        IsSelectionEnabled="True" 
+                                        Title="LineSeries1"/>
+                    </chartingToolkit:Chart>
+                    <Button Name="hideButton" Grid.Row="1"
+                    Content="确定" Style="{StaticResource functionButton}"
+                    Height="24" Width="100" 
+                    Click="hideButton_Click"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

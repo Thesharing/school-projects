@@ -1,0 +1,35 @@
+datalink -b 
+=========================================================================
+                          Station B                                 
+-------------------------------------------------------------------------
+Protocol.lib, version 3.0, Build: Oct 19 2009 (jiangy@public3.bta.net.cn)
+Channel: 8000 bps, 270 ms propagation delay, bit error rate 1.0E-005
+Log file "datalink-B.log", TCP port 59144, debug mask 0x00
+Station B is connecting station A (TCP port 59144) ... Failed!
+Station B is connecting station A (TCP port 59144) ... Failed!
+Station B is connecting station A (TCP port 59144) ... Done.
+New epoch: Sun Apr 24 09:45:36 2016
+=========================================================================
+Designed by Hong Zhilong, based on Teacher Jiang's code.
+Build: May 23 2015  22:49:12
+2.604 .... 8 packets received, 7678 bps, 95.97%, Err 0 (0.0e+000)
+4.705 .... 16 packets received, 7737 bps, 96.72%, Err 0 (0.0e+000)
+6.811 .... 24 packets received, 7751 bps, 96.89%, Err 0 (0.0e+000)
+8.932 .... 32 packets received, 7745 bps, 96.81%, Err 0 (0.0e+000)
+11.038 .... 40 packets received, 7752 bps, 96.90%, Err 1 (1.2e-005)
+13.158 .... 47 packets received, 7586 bps, 94.83%, Err 1 (9.7e-006)
+15.262 .... 55 packets received, 7615 bps, 95.19%, Err 1 (8.3e-006)
+17.382 .... 63 packets received, 7629 bps, 95.36%, Err 1 (7.3e-006)
+19.485 .... 71 packets received, 7647 bps, 95.59%, Err 2 (1.3e-005)
+21.605 .... 79 packets received, 7655 bps, 95.69%, Err 2 (1.2e-005)
+24.239 .... 84 packets received, 7238 bps, 90.47%, Err 3 (1.6e-005)
+26.356 .... 96 packets received, 7595 bps, 94.94%, Err 3 (1.4e-005)
+28.479 .... 104 packets received, 7604 bps, 95.06%, Err 3 (1.3e-005)
+30.585 .... 112 packets received, 7617 bps, 95.21%, Err 4 (1.6e-005)
+32.698 .... 120 packets received, 7626 bps, 95.32%, Err 4 (1.5e-005)
+34.804 .... 128 packets received, 7635 bps, 95.44%, Err 4 (1.4e-005)
+36.919 .... 136 packets received, 7642 bps, 95.52%, Err 4 (1.4e-005)
+39.041 .... 144 packets received, 7646 bps, 95.57%, Err 4 (1.3e-005)
+41.143 .... 152 packets received, 7654 bps, 95.67%, Err 4 (1.2e-005)
+44.575 .... 160 packets received, 7430 bps, 92.87%, Err 5 (1.4e-005)
+46.693 .... 172 packets received, 7621 bps, 95.26%, Err 5 (1.3e-005)

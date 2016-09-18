@@ -1,0 +1,143 @@
+﻿<Window x:Class="GSM_DB.InqueryCellPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GSM_DB"
+        mc:Ignorable="d"
+        Title="小区查询" 
+        Height="400" Width="500"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#0063b1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Image Source="Header.png" Stretch="Fill" MouseMove="Image_MouseMove"/>
+                <Button x:Name="buttonClose" Height="20" Width="20"
+                        Background="Transparent" BorderBrush="Transparent" Click="buttonClose_Click" 
+                        Margin="458,10,20,84">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="CloseIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="buttonMinimize" Height="20" Width="20" 
+                        Background="Transparent" BorderBrush="Transparent" Click="buttonMinimize_Click" Margin="428,10,50,84">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="MinimizeIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock Text="小区查询" Foreground="White" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"
+                           FontSize="24"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Name="labelCellID" Content="小区编号：" 
+                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+                    <ComboBox Name="comboxBoxCellID" Grid.Column="1" Width="120"
+                      HorizontalAlignment="Left" VerticalAlignment="Center" 
+                              BorderBrush="#0063b1"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Button Name="buttonOk" Width="80" Height="25" 
+                    Content="查询" Style="{StaticResource functionButton}"
+                    HorizontalAlignment="Center" VerticalAlignment="Center" 
+                    Click="buttonOk_Click"/>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0"
+                   Content="基站名称"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="2" Grid.Row="0"
+                   Content="地区代号"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="0" Grid.Row="1"
+                   Content="经度"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="2" Grid.Row="1"
+                   Content="纬度"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="0" Grid.Row="2"
+                   Content="LAC"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="2" Grid.Row="2"
+                   Content="方位角"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="0" Grid.Row="3"
+                   Content="规划半径"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <Label Grid.Column="2" Grid.Row="3"
+                   Content="BCCH"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+                    <TextBlock Name="btsNameTextBlock" 
+                       Grid.Column="1" Grid.Row="0" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="areaNameTextBlock" 
+                       Grid.Column="3" Grid.Row="0" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="lontitudeTextBlock" 
+                       Grid.Column="1" Grid.Row="1" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="latitudeTextBlock" 
+                       Grid.Column="3" Grid.Row="1" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="lacTextBlock" 
+                       Grid.Column="1" Grid.Row="2" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="directionTextBlock" 
+                       Grid.Column="3" Grid.Row="2" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="radiousTextBlock" 
+                       Grid.Column="1" Grid.Row="3" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                    <TextBlock Name="bcchTextBlock" 
+                       Grid.Column="3" Grid.Row="3" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Width="100" Height="20" Text="--" TextAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

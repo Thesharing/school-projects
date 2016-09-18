@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="3029.8" y="1232.0">_13211415_洪志龙_7_MainUI</node>
+    <node x="248.5" y="183.0">_13211415_洪志龙_7_CompositeStrategy</node>
+    <node x="2492.0000000000005" y="460.0">_13211415_洪志龙_7_BookCatalog</node>
+    <node x="1410.7500000000005" y="459.5">_13211415_洪志龙_7_PricingStrategyFactory</node>
+    <node x="4036.5000000000005" y="1097.5">_13211415_洪志龙_7_BuyUI</node>
+    <node x="1958.5000000000005" y="206.0">_13211415_洪志龙_7_PercentageStrategy</node>
+    <node x="4310.5" y="1097.5">_13211415_洪志龙_7_AddBookUI</node>
+    <node x="710.5000000000005" y="206.0">_13211415_洪志龙_7_FlatRateStrategy</node>
+    <node x="1869.0000000000005" y="684.0">_13211415_洪志龙_7_Controller</node>
+    <node x="1170.5868945868947" y="0.0">_13211415_洪志龙_7_IPricingStrategy</node>
+    <node x="2425.5000000000005" y="252.5">_13211415_洪志龙_7_SaleLineItem</node>
+    <node x="2918.0000000000005" y="425.0">_13211415_洪志龙_7_Sale</node>
+    <node x="4092.0484330484333" y="0.5">_13211415_洪志龙_7_BookSpecification</node>
+    <node x="0.0" y="483.0">_13211415_洪志龙_7_ObserverForMainUI</node>
+    <node x="3815.7500000000005" y="229.5">_13211415_洪志龙_7_Subject</node>
+    <node x="1511.5000000000005" y="217.5">_13211415_洪志龙_7_NoDiscountStrategy</node>
+    <node x="3896.0000000000005" y="471.5">_13211415_洪志龙_7_ShoppingCartUI</node>
+    <node x="1938.3000000000002" y="1086.0">_13211415_洪志龙_7_StrategiesUI</node>
+    <node x="1177.5000000000005" y="183.5">_13211415_洪志龙_7_StrategyCatalog</node>
+    <node x="286.0" y="483.0">_13211415_洪志龙_7_CompositeBestForCustomer</node>
+    <node x="3088.2500000000005" y="252.5">_13211415_洪志龙_7_Observer</node>
+    <node x="3086.3" y="1381.0">_13211415_洪志龙_7_Main</node>
+    <node x="3415.0000000000005" y="460.0">_13211415_洪志龙_7_SubjectForMainUI</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="_13211415_洪志龙_7_FlatRateStrategy" target="_13211415_洪志龙_7_IPricingStrategy">
+      <point x="0.0" y="-73.0" />
+      <point x="934.0000000000005" y="163.0" />
+      <point x="1323.0868945868947" y="163.0" />
+      <point x="-61.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_CompositeBestForCustomer" target="_13211415_洪志龙_7_CompositeStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_AddBookUI" target="_13211415_洪志龙_7_Controller">
+      <point x="-63.25" y="-26.5" />
+      <point x="4373.75" y="1056.0" />
+      <point x="2432.4000000000005" y="1056.0" />
+      <point x="250.39999999999998" y="176.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_PercentageStrategy" target="_13211415_洪志龙_7_IPricingStrategy">
+      <point x="0.0" y="-73.0" />
+      <point x="2182.0000000000005" y="153.0" />
+      <point x="1506.0868945868947" y="153.0" />
+      <point x="122.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_SubjectForMainUI">
+      <point x="288.9230769230769" y="-176.0" />
+      <point x="2470.923076923077" y="664.0" />
+      <point x="3645.5000000000005" y="664.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_BuyUI" target="_13211415_洪志龙_7_Controller">
+      <point x="-63.25" y="-26.5" />
+      <point x="4099.75" y="1066.0" />
+      <point x="2307.2000000000003" y="1066.0" />
+      <point x="125.19999999999999" y="176.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_NoDiscountStrategy" target="_13211415_洪志龙_7_IPricingStrategy">
+      <point x="0.0" y="-61.5" />
+      <point x="1725.0000000000005" y="163.0" />
+      <point x="1445.0868945868947" y="163.0" />
+      <point x="61.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Sale" target="_13211415_洪志龙_7_SaleLineItem">
+      <point x="-159.0" y="-84.5" />
+      <point x="2997.5000000000005" y="405.0" />
+      <point x="2593.5000000000005" y="405.0" />
+      <point x="56.0" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_FlatRateStrategy">
+      <point x="-192.61538461538453" y="-176.0" />
+      <point x="1989.3846153846157" y="644.0" />
+      <point x="934.0000000000005" y="644.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_ShoppingCartUI" target="_13211415_洪志龙_7_Subject">
+      <point x="73.25" y="-38.0" />
+      <point x="100.0" y="49.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_SaleLineItem" target="_13211415_洪志龙_7_IPricingStrategy">
+      <point x="-56.0" y="-26.5" />
+      <point x="2481.5000000000005" y="143.0" />
+      <point x="1567.0868945868947" y="143.0" />
+      <point x="183.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_BuyUI">
+      <point x="18.3125" y="-49.5" />
+      <point x="3194.6125" y="1182.0" />
+      <point x="4163.0" y="1182.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_StrategyCatalog" target="_13211415_洪志龙_7_IPricingStrategy">
+      <point x="0.0" y="-95.5" />
+      <point x="1334.5000000000005" y="163.0" />
+      <point x="1384.0868945868947" y="163.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_ObserverForMainUI">
+      <point x="-288.9230769230769" y="-176.0" />
+      <point x="1893.0769230769233" y="664.0" />
+      <point x="199.5" y="664.0" />
+      <point x="66.5" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_BookCatalog">
+      <point x="144.46153846153845" y="-176.0" />
+      <point x="2326.461538461539" y="634.0" />
+      <point x="2796.5000000000005" y="634.0" />
+      <point x="101.5" y="49.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_StrategiesUI" target="_13211415_洪志龙_7_Controller">
+      <point x="0.0" y="-38.0" />
+      <point x="-125.20000000000002" y="176.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_ShoppingCartUI" target="_13211415_洪志龙_7_Observer">
+      <point x="-73.25" y="-38.0" />
+      <point x="3969.2500000000005" y="395.0" />
+      <point x="3293.0000000000005" y="395.0" />
+      <point x="68.25" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_Controller">
+      <point x="-18.3125" y="-49.5" />
+      <point x="3157.9875" y="1182.0" />
+      <point x="2185.8" y="1182.0" />
+      <point x="2185.8" y="1066.0" />
+      <point x="2182.0000000000005" y="1066.0" />
+      <point x="0.0" y="176.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_AddBookUI" target="_13211415_洪志龙_7_BookSpecification">
+      <point x="63.25" y="-26.5" />
+      <point x="4500.25" y="163.0" />
+      <point x="4270.548433048433" y="163.0" />
+      <point x="51.0" y="61.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_PricingStrategyFactory" target="_13211415_洪志龙_7_NoDiscountStrategy">
+      <point x="104.75" y="-50.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_SaleLineItem" target="_13211415_洪志龙_7_BookSpecification">
+      <point x="56.0" y="-26.5" />
+      <point x="2593.5000000000005" y="153.0" />
+      <point x="4117.548433048433" y="153.0" />
+      <point x="-102.0" y="61.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_StrategyCatalog">
+      <point x="-96.30769230769226" y="-176.0" />
+      <point x="2085.692307692308" y="624.0" />
+      <point x="1287.666666666667" y="624.0" />
+      <point x="1287.666666666667" y="405.0" />
+      <point x="1334.5000000000005" y="405.0" />
+      <point x="0.0" y="95.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_BookCatalog" target="_13211415_洪志龙_7_BookSpecification">
+      <point x="0.0" y="-49.5" />
+      <point x="2695.0000000000005" y="163.0" />
+      <point x="4168.548433048433" y="163.0" />
+      <point x="-51.0" y="61.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_StrategiesUI">
+      <point x="-54.9375" y="-49.5" />
+      <point x="3121.3625" y="1192.0" />
+      <point x="2056.8" y="1192.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_BuyUI" target="_13211415_洪志龙_7_BookSpecification">
+      <point x="63.25" y="-26.5" />
+      <point x="4226.25" y="163.0" />
+      <point x="4219.548433048433" y="163.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_CompositeStrategy" target="_13211415_洪志龙_7_IPricingStrategy">
+      <point x="110.5" y="-96.0" />
+      <point x="580.0" y="153.0" />
+      <point x="1262.0868945868947" y="153.0" />
+      <point x="-122.0" y="61.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_SaleLineItem">
+      <point x="48.153846153846075" y="-176.0" />
+      <point x="2230.1538461538466" y="614.0" />
+      <point x="2481.5000000000005" y="614.0" />
+      <point x="-56.0" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Sale" target="_13211415_洪志龙_7_Observer">
+      <point x="0.0" y="-84.5" />
+      <point x="-68.25" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_PricingStrategyFactory" target="_13211415_洪志龙_7_StrategyCatalog">
+      <point x="-104.75" y="-50.0" />
+      <point x="1515.5000000000005" y="405.0" />
+      <point x="1439.1666666666672" y="405.0" />
+      <point x="104.66666666666674" y="95.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_CompositeBestForCustomer">
+      <point x="-240.76923076923072" y="-176.0" />
+      <point x="1941.2307692307695" y="654.0" />
+      <point x="469.5" y="654.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_ObserverForMainUI">
+      <point x="-128.1875" y="-49.5" />
+      <point x="3048.1125" y="1212.0" />
+      <point x="66.5" y="1212.0" />
+      <point x="-66.5" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Main" target="_13211415_洪志龙_7_MainUI">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_AddBookUI">
+      <point x="91.5625" y="-49.5" />
+      <point x="3267.8625" y="1202.0" />
+      <point x="4437.0" y="1202.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Sale" target="_13211415_洪志龙_7_Subject">
+      <point x="159.0" y="-84.5" />
+      <point x="3315.5000000000005" y="405.0" />
+      <point x="3915.7500000000005" y="405.0" />
+      <point x="-100.0" y="49.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_ShoppingCartUI">
+      <point x="54.9375" y="-49.5" />
+      <point x="3231.2375" y="1192.0" />
+      <point x="4300.0" y="1192.0" />
+      <point x="4300.0" y="664.0" />
+      <point x="4042.5000000000005" y="664.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_PercentageStrategy">
+      <point x="0.0" y="-176.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_Sale">
+      <point x="240.76923076923072" y="-176.0" />
+      <point x="2422.769230769231" y="654.0" />
+      <point x="3275.7500000000005" y="654.0" />
+      <point x="119.25" y="84.5" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_MainUI" target="_13211415_洪志龙_7_BookSpecification">
+      <point x="128.1875" y="-49.5" />
+      <point x="3304.4875" y="1212.0" />
+      <point x="4574.0" y="1212.0" />
+      <point x="4574.0" y="153.0" />
+      <point x="4321.548433048433" y="153.0" />
+      <point x="102.0" y="61.0" />
+    </edge>
+    <edge source="_13211415_洪志龙_7_Controller" target="_13211415_洪志龙_7_PricingStrategyFactory">
+      <point x="-48.15384615384613" y="-176.0" />
+      <point x="2133.8461538461543" y="614.0" />
+      <point x="1620.2500000000005" y="614.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1608.3333333333326" y="698.9761904761903" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

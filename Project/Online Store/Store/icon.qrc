@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>Icon/addcart-white-48.png</file>
+        <file>Icon/cart-white-48.png</file>
+        <file>Icon/config-white-48.png</file>
+        <file>Icon/exit-white-48.png</file>
+        <file>Icon/useradd-white-48.png</file>
+        <file>Icon/login-white-48.png</file>
+        <file>Icon/store-48.png</file>
+        <file>Icon/pay-white-48.png</file>
+        <file>Icon/store-32.png</file>
+        <file>Icon/book-32.png</file>
+        <file>Icon/cloth-32.png</file>
+        <file>Icon/electro-32.png</file>
+        <file>Icon/food-32.png</file>
+    </qresource>
+</RCC>

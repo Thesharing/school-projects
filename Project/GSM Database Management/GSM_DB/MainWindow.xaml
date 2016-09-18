@@ -1,0 +1,73 @@
+﻿<Window x:Class="GSM_DB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GSM_DB"
+        mc:Ignorable="d"
+        Title="GSM网络话务分析系统" Height="400" Width="500"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#0063b1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Image Source="Header.png" Stretch="Fill" MouseMove="Image_MouseMove"/>
+                <TextBlock Text="GSM网络话务分析系统" Foreground="White" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="24"/>
+                <Button x:Name="buttonClose" Height="20" Width="20"
+                        Background="Transparent" BorderBrush="Transparent" 
+                        Click="buttonClose_Click" Margin="458,10,20,97">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="CloseIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="buttonMinimize" Height="20" Width="20" 
+                        Background="Transparent" BorderBrush="Transparent" 
+                        Click="buttonMinimize_Click" Margin="423,10,55,97">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="MinimizeIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Menu Grid.Row="1" Background="White">
+                    <MenuItem Header="数据处理" Padding="10 0 10 0">
+                        <MenuItem Name="importMenuItem"  Header="批量导入" Click="ImportMenuItem_Click" />
+                        <MenuItem Name="exportMenuItem" Header="批量导出" Click="ExportMenuItem_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="信息查询" Padding="10 0 10 0">
+                        <MenuItem Name="inqueryBTSMenuItem" Header="基站查询" Click="InqueryBTSMenuItem_Click"/>
+                        <MenuItem Name="inqueryCellIDMenuItem" Header="小区查询" Click="inqueryCellIDMenuItem_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="话务查询" Padding="10 0 10 0">
+                        <MenuItem Name="inqueryTrafficeInfoMenuItem" Header="小时级查询" Click="inqueryTrafficeInfoMenuItem_Click"/>
+                        <MenuItem Name="inqueryMiniteTrafficInfoMenuItem" Header="分钟级查询" Click="inqueryMiniteTrafficInfoMenuItem_Click"/>
+                        <MenuItem Name="inqueryQuarterTrafficInfoMenuItem" Header="刻钟级查询" Click="inqueryQuarterTrafficInfoMenuItem_Click"/>
+                        <MenuItem Name="inqueryCongsInfoMenuItem"  Header="拥塞查询" Click="inqueryCongsInfoMenuItem_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="邻区计算" Padding="10 0 10 0"  Click="Distance_Click">
+                    </MenuItem>
+                    <MenuItem Header="帮助" Padding="10 0 10 0">
+                        <MenuItem Header="查看帮助"/>
+                        <MenuItem Header="关于..." Click="About_Click"/>
+                        <Separator />
+                        <MenuItem Name="exitMenuItem" Header="退出" Click="exitMenuItem_Click"/>
+                    </MenuItem>
+                </Menu>
+                <Image Grid.Row="2"
+                       Width="100" Height="100"
+                        Source="icon.png" Opacity="0.2" 
+                       Margin="280,65,10,10" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>Icon/config-white-48.png</file>
+        <file>Icon/deposite-blue-48.png</file>
+        <file>Icon/deposit-white-48.png</file>
+        <file>Icon/login-white-48.png</file>
+        <file>Icon/exit-white-48.png</file>
+        <file>Icon/withdraw-white-48.png</file>
+        <file>Icon/pay-blue-48.png</file>
+        <file>Icon/useradd-white-48.png</file>
+        <file>Icon/withdraw-blue-48.png</file>
+    </qresource>
+</RCC>

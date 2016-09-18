@@ -1,0 +1,52 @@
+GoBackN a 
+=========================================================================
+                          Station A                                 
+-------------------------------------------------------------------------
+Protocol.lib, version 3.0, Build: Oct 19 2009 (jiangy@public3.bta.net.cn)
+Channel: 8000 bps, 270 ms propagation delay, bit error rate 1.0E-005
+Log file "GoBackN-A.log", TCP port 59144, debug mask 0x00
+Station A is waiting for station B on TCP port 59144 ... Done.
+New epoch: Thu Apr 30 21:46:40 2015
+=========================================================================
+Designed by Jiang Yanjun, build: Oct 19 2009  22:57:25
+Protocol Options: Piggybacking (Enabled), NAK (Enabled)
+3.440 .... 3 packets received, 2890 bps, 36.12%, Err 1 (5.3e-005)
+5.549 .... 11 packets received, 5319 bps, 66.49%, Err 1 (2.8e-005)
+7.658 .... 19 packets received, 6134 bps, 76.67%, Err 1 (1.9e-005)
+9.768 .... 27 packets received, 6541 bps, 81.76%, Err 1 (1.4e-005)
+11.893 .... 35 packets received, 6776 bps, 84.70%, Err 1 (1.2e-005)
+13.987 .... 43 packets received, 6949 bps, 86.86%, Err 1 (9.7e-006)
+16.112 .... 51 packets received, 7058 bps, 88.23%, Err 1 (8.3e-006)
+18.237 .... 59 packets received, 7140 bps, 89.25%, Err 1 (7.3e-006)
+20.346 .... 67 packets received, 7210 bps, 90.12%, Err 1 (6.5e-006)
+22.455 .... 75 packets received, 7266 bps, 90.82%, Err 1 (5.8e-006)
+25.096 .... 80 packets received, 6889 bps, 86.12%, Err 2 (1.0e-005)
+27.190 .... 88 packets received, 6965 bps, 87.06%, Err 2 (9.6e-006)
+29.858 .... 93 packets received, 6673 bps, 83.41%, Err 3 (1.3e-005)
+31.952 .... 101 packets received, 6751 bps, 84.39%, Err 3 (1.2e-005)
+34.061 .... 109 packets received, 6817 bps, 85.21%, Err 3 (1.1e-005)
+36.202 .... 117 packets received, 6868 bps, 85.85%, Err 3 (1.1e-005)
+38.296 .... 125 packets received, 6922 bps, 86.53%, Err 3 (1.0e-005)
+40.421 .... 133 packets received, 6965 bps, 87.06%, Err 3 (9.5e-006)
+42.527 .... 141 packets received, 7007 bps, 87.58%, Err 3 (9.0e-006)
+44.636 .... 144 packets received, 6807 bps, 85.09%, Err 4 (1.1e-005)
+46.730 .... 152 packets received, 6854 bps, 85.68%, Err 4 (1.1e-005)
+48.839 .... 160 packets received, 6895 bps, 86.19%, Err 4 (1.0e-005)
+50.964 .... 168 packets received, 6930 bps, 86.62%, Err 4 (1.0e-005)
+53.089 .... 176 packets received, 6962 bps, 87.02%, Err 5 (1.2e-005)
+55.714 .... 181 packets received, 6814 bps, 85.18%, Err 6 (1.4e-005)
+57.839 .... 189 packets received, 6848 bps, 85.60%, Err 6 (1.3e-005)
+59.949 .... 197 packets received, 6881 bps, 86.01%, Err 6 (1.3e-005)
+62.058 .... 205 packets received, 6912 bps, 86.40%, Err 6 (1.2e-005)
+64.183 .... 213 packets received, 6939 bps, 86.73%, Err 6 (1.2e-005)
+66.292 .... 221 packets received, 6966 bps, 87.07%, Err 6 (1.1e-005)
+68.417 .... 229 packets received, 6989 bps, 87.36%, Err 6 (1.1e-005)
+70.527 .... 237 packets received, 7013 bps, 87.66%, Err 6 (1.1e-005)
+72.636 .... 245 packets received, 7035 bps, 87.94%, Err 6 (1.0e-005)
+74.746 .... 253 packets received, 7056 bps, 88.20%, Err 6 (1.0e-005)
+76.855 .... 261 packets received, 7076 bps, 88.45%, Err 6 (9.9e-006)
+78.980 .... 269 packets received, 7093 bps, 88.67%, Err 6 (9.6e-006)
+81.074 .... 277 packets received, 7113 bps, 88.91%, Err 6 (9.4e-006)
+83.183 .... 280 packets received, 7004 bps, 87.55%, Err 8 (1.2e-005)
+85.308 .... 288 packets received, 7022 bps, 87.78%, Err 8 (1.2e-005)
+87.418 .... 296 packets received, 7040 bps, 88.01%, Err 8 (1.2e-005)

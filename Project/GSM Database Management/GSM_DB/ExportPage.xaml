@@ -1,0 +1,78 @@
+﻿<Window x:Class="GSM_DB.ExportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GSM_DB"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      mc:Ignorable="d" 
+      Height="300" Width="400"
+      Title="ExportPage"
+      WindowStartupLocation="CenterScreen"
+      ResizeMode="NoResize"
+      WindowStyle="None">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#0063b1" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="Header.png" Stretch="Fill" MouseMove="Image_MouseMove"/>
+                <Button x:Name="buttonClose" Height="20" Width="20"
+                        Background="Transparent" BorderBrush="Transparent" Click="buttonClose_Click" Margin="368,10,10,69">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="CloseIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="buttonMinimize" Height="20" Width="20" 
+                        Background="Transparent" BorderBrush="Transparent" Click="buttonMinimize_Click" Margin="338,10,40,69">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Image Source="MinimizeIcon-White.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock Text="导出数据" Foreground="White" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"
+                           FontSize="24"/>
+                <TextBox x:Name="filePathTextBox"
+                           Height="30" Width="200" 
+                           Margin="10,0,90,0"
+                            FontSize="16" 
+                            VerticalAlignment="Center"
+                            IsReadOnly="True" Grid.Row="2">
+                </TextBox>
+                <Button x:Name="explorerButton" 
+                            Height="30" Width="60" 
+                            Content="浏览..." 
+                            Style="{StaticResource functionButton}"
+                            Margin="222,0,18,0" VerticalAlignment="Center"
+                            Click="explorerButton_Click" Grid.Row="2"/>
+                <Button x:Name="okButton"
+                            Height="30" Width="60" 
+                            Content="确定" Style="{StaticResource functionButton}" 
+                            Margin="121,0,119,0" VerticalAlignment="Center"
+                            Click="okButton_Click" Grid.Row="3"/>
+                <ComboBox x:Name="comboBox" HorizontalAlignment="Center" BorderBrush="#0063b1"
+                            VerticalAlignment="Center" Width="120" SelectedIndex="0" Grid.Row="1">
+                    <ComboBoxItem Content="所有信息" HorizontalAlignment="Left" Width="118"/>
+                </ComboBox>
+            </Grid>
+        </Border>
+        <Grid Name="grid" 
+              Margin="10,100,10,10" 
+              Background="White"
+              Visibility="Collapsed">
+            <Image x:Name="imageLoading"
+                   gif:ImageBehavior.RepeatBehavior="Forever"
+                   gif:ImageBehavior.AnimatedSource="Loading.gif"
+                   Width="100" Height="100" Visibility="Visible"/>
+        </Grid>
+    </Grid>
+</Window>
