@@ -1,0 +1,72 @@
+SDT-SYSTEM-4.4
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+SourceDirectory=%unconnected%
+TargetDirectory=%unconnected%
+[DIAGRAMS]
+0 23 "State Chart" "" 0 0 0 ""
+0 23 "MSC Design" "" 0 0 0 ""
+0 16 ErrorEnd ErrorEnd.msc 0 1198831901 - ""
+0 16 ACKError ACKError.msc 0 1198832026 - ""
+0 16 ACKLost_W ACKLost_W.msc 0 1198832453 - ""
+0 16 ACKLost_R ACKLost.msc 0 1198832441 - ""
+0 16 DATALost_w DATALost_w.msc 0 1198832544 - ""
+0 16 DATALost_R DATALost.msc 0 1198832623 - ""
+0 16 WRQLost WRQLost.msc 0 1198832778 - ""
+0 16 FileReadOK FileReadOK.msc 0 1198833000 - ""
+0 16 FileWriteOK FileWriteOK.msc 0 1198833278 - ""
+0 16 RRQLost RRQLost.msc 0 1198833263 - ""
+0 16 DATASeqWrong DATASeqWrong.msc 0 1198833390 - ""
+0 16 SpecialError SpecialError.msc 0 1198833574 - ""
+0 23 "SDL Design for Client" "" 0 0 0 ""
+0 11 data_def data_def.sun 0 1483622917 data_def ""
+0 1 client_sys client_sys.ssy 0 1483622917 client_sys ""
+1 2 client_block client_block.sbk 0 1483622914 client_block ""
+2 5 client_p client_p.spr 0 1483673902 client_p ""
+3 6 FileOpen FileOpen.spd 0 1479975131 OpenFile ""
+3 6 FileRead FileRead.spd 0 1483617322 FileRead ""
+3 6 FileWrite FileWrite.spd 0 1483617146 FileWrite ""
+3 6 FileClose FileClose.spd 0 1479975185 FileClose ""
+3 6 PlusOne PlusOne.spd 0 1296980443 Plus ""
+[VIEWOPTIONS]
+ShowDirectories=True
+ShowLongMenus=True
+[ANALYSEROPTIONS]
+ASN1KeywordFile=False
+ASN1Parameter=False
+CoderBufferInSDL=Octet-String
+Filter=False
+InstanceFile=False
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[STATEMATRIXOPTIONS]
+[INDEXOPTIONS]
+ShowSelectedTypes=True
+ShowSelectedUses=True
+ShowSelectedDiagrams=True
+FilterTypes=
+FilterUses=
+FilterDiagrams=
+NameFirst=True
+IndexAppearance=
+[PACKAGEGENERATOROPTIONS]
+DuplicateFile=
+[MAKEOPTIONS]
+CCompilerDriver=False
+Kernel=SCTAMDEBCOM
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterFile=""
+PrintFrom=0
+PrintTo=0
+PrintToFile=False

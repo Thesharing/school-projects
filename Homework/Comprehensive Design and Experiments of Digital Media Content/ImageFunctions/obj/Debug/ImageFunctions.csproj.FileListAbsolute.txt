@@ -1,0 +1,10 @@
+G:\Download\ImageFunctions\ImageFunctions\bin\Debug\ImageFunctions.dll
+G:\Download\ImageFunctions\ImageFunctions\bin\Debug\ImageFunctions.pdb
+G:\Download\ImageFunctions\ImageFunctions\obj\Debug\ImageFunctions.csprojResolveAssemblyReference.cache
+G:\Download\ImageFunctions\ImageFunctions\obj\Debug\ImageFunctions.dll
+G:\Download\ImageFunctions\ImageFunctions\obj\Debug\ImageFunctions.pdb
+C:\Users\Thesharing\documents\visual studio 2015\Projects\Photostore\ImageFunctions\bin\Debug\ImageFunctions.dll
+C:\Users\Thesharing\documents\visual studio 2015\Projects\Photostore\ImageFunctions\bin\Debug\ImageFunctions.pdb
+C:\Users\Thesharing\documents\visual studio 2015\Projects\Photostore\ImageFunctions\obj\Debug\ImageFunctions.csprojResolveAssemblyReference.cache
+C:\Users\Thesharing\documents\visual studio 2015\Projects\Photostore\ImageFunctions\obj\Debug\ImageFunctions.dll
+C:\Users\Thesharing\documents\visual studio 2015\Projects\Photostore\ImageFunctions\obj\Debug\ImageFunctions.pdb

@@ -1,0 +1,62 @@
+SDT-SYSTEM-4.4
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+[DIAGRAMS]
+0 23 MSC "" 0 0 0 ""
+0 16 huchuchenggong_caller_guaji call_succeed_caller_onhook.msc 0 1479958164 - ""
+0 16 huchuchenggong_callee_guaji call_succeed_callee_onhook.msc 0 1479958238 - ""
+0 16 huru_callee_guaji answer_call_caller_onhook.msc 0 1479963628 - ""
+0 16 huru_caller_guaji answer_call_callee_onhook.msc 0 1479963678 - ""
+0 16 call_failed_callee_busy call_failed_callee_busy.msc 0 1479963872 - ""
+0 16 call_failed_network_busy call_failed_network_busy.msc 0 1479964027 - ""
+0 16 message_received message_received.msc 0 1479964205 - ""
+0 16 shifang_when_ringing release_when_ringing.msc 0 1479964550 - ""
+0 16 guaji_when_ringback_on onhook_when_ringing_back.msc 0 1479964513 - ""
+0 23 SDL "" 0 0 0 ""
+0 1 cellphone cellphone.ssy 0 1479908961 cellphone ""
+1 2 cellphone cellphone.sbk 0 1479908961 phone_system ""
+2 5 cellphone cellphone.spr 0 1483538661 cellphone1 ""
+3 6 CheckNum CheckNum.spd 0 1483519370 CheckNum ""
+0 49 cellphone cellphone.xrf 0 0 - ""
+[VIEWOPTIONS]
+ShowDirectories=True
+ShowLongMenus=True
+[ANALYSEROPTIONS]
+ASN1KeywordFile=False
+ASN1Parameter=False
+CoderBufferInSDL=Octet-String
+Filter=False
+InstanceFile=False
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[STATEMATRIXOPTIONS]
+[INDEXOPTIONS]
+ShowSelectedTypes=True
+ShowSelectedUses=True
+ShowSelectedDiagrams=True
+FilterTypes=
+FilterUses=
+FilterDiagrams=
+NameFirst=True
+IndexAppearance=
+[PACKAGEGENERATOROPTIONS]
+DuplicateFile=
+[MAKEOPTIONS]
+CCompilerDriver=False
+Kernel=SCTAMDEBCOM
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterFile=""
+PrintFrom=0
+PrintTo=0
+PrintToFile=False

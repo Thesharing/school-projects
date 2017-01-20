@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photostore", "Photostore\Photostore.csproj", "{77B360D4-304A-442F-8F9B-91D5740C9950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFunctions", "ImageFunctions\ImageFunctions.csproj", "{D6A91AD5-7F80-46BA-A5F1-F7DCCDB02183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77B360D4-304A-442F-8F9B-91D5740C9950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B360D4-304A-442F-8F9B-91D5740C9950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B360D4-304A-442F-8F9B-91D5740C9950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B360D4-304A-442F-8F9B-91D5740C9950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A91AD5-7F80-46BA-A5F1-F7DCCDB02183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A91AD5-7F80-46BA-A5F1-F7DCCDB02183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A91AD5-7F80-46BA-A5F1-F7DCCDB02183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A91AD5-7F80-46BA-A5F1-F7DCCDB02183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Photostore"
+                    xmlns:properties="clr-namespace:Photostore.Properties"
+                    xmlns:common="clr-namespace:Photostore.Common">
+    <common:BitmapToImageSourceConverter x:Key="BitmapToImageSourceConverter" />
+    <Style x:Key="BarButtonStyle" TargetType="Button">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Width" Value="40" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Background" Value="#f0f0f0" />
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderBrush" Value="Transparent"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="BarButtonImageStyle" TargetType="Image">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=IsEnabled, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}" Value="True">
+                <Setter Property="Opacity" Value="1" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=IsEnabled, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}" Value="False">
+                <Setter Property="Opacity" Value="0.5" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="NormalButtonStyle" TargetType="Button">
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Background" Value="#f0f0f0" />
+    </Style>
+    <Style x:Key="LockButtonImageStyle" TargetType="Image">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=IsChecked, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
+                <Setter Property="Source" Value="{Binding Source={x:Static properties:Resources.LockOff}, Converter={StaticResource BitmapToImageSourceConverter}}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=IsChecked, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="False">
+                <Setter Property="Source" Value="{Binding Source={x:Static properties:Resources.LockOn}, Converter={StaticResource BitmapToImageSourceConverter}}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

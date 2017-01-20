@@ -1,0 +1,205 @@
+﻿<Window x:Class="Photostore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Photostore"
+        xmlns:properties ="clr-namespace:Photostore.Properties" 
+        xmlns:common ="clr-namespace:Photostore.Common"
+        mc:Ignorable="d"
+        Title="PhotoStore" 
+        Height="500" Width="625"
+        MinHeight="300" MinWidth="500"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <common:BitmapToImageSourceConverter x:Key="BitmapToImageSourceConverter" />
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Menu Name="MainMenu" Height="20">
+                <MenuItem Header="文件(_F)" Height="20">
+                    <MenuItem Name="OpenMenuItem" Header="打开(_O)" Click="OpenMenuItem_Click"/>
+                    <MenuItem Name="SaveMenuItem" Header="保存(_S)" IsEnabled="False" Click="SaveMenuItem_Click"/>
+                    <Separator/>
+                    <MenuItem Name="ExitMenuItem" Header="退出(_E)" Click="ExitMenuItem_Click"/>
+                </MenuItem>
+                <MenuItem Header="编辑(_E)">
+                    <MenuItem Name="UndoMenuItem" Header="撤销(_U)" IsEnabled="False" Click="UndoMenuItem_Click"/>
+                    <MenuItem Name="UndoAllMenuItem" Header="撤销所有修改(_A)" IsEnabled="False" Click="UndoAllMenuItem_Click"/>
+                    <Separator />
+                    <MenuItem Name="CopyMenuItem" Header="复制(_C)" IsEnabled="False" Click="CopyMenuItem_Click"/>
+                </MenuItem>
+                <MenuItem Header="帮助(_H)">
+                    <MenuItem Name="HelpMenuItem" Header="帮助(_H)..." Click="HelpMenuItem_Click"/>
+                    <Separator />
+                    <MenuItem Name="AboutMenuItem" Header="关于(_A)..." Click="AboutMenuItem_Click" />
+                </MenuItem>
+            </Menu>
+            <StackPanel Grid.Row="1" 
+                        Orientation="Horizontal"
+                        Background="#f0f0f0">
+                <Button Name="BrightnessAddButton" 
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="BrightnessAddButton_Click">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.LightnessAdd}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="BrightnessMinusButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="BrightnessMinusButton_Click">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.LightnessMinus}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="ContrastAddButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="ContrastAddButton_Click">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.ContrastAdd}, 
+                            Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="ContrastMinusButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="ContrastMinusButton_Click">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.ContrastMinus}, 
+                            Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="GrayScaleButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="GrayScaleButton_Click">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.GrayScale}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="XFlipButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="XFlipButton_Click" >
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.VerticalFlip}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="YFlipButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="YFlipButton_Click" >
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.HorizontalFlip}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="Rotate90Button"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="Rotate90Button_Click" >
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.Rotate90}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="Rotate270Button"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="Rotate270Button_Click">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.Rotate270}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="ResizeButton"
+                        IsEnabled="False"
+                        Style="{StaticResource BarButtonStyle}"
+                        Click="ResizeButton_Click" >
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static properties:Resources.Resize}, Converter={StaticResource BitmapToImageSourceConverter}}"
+                               Height="32" Width="32"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Style="{StaticResource BarButtonImageStyle}"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <ScrollViewer Grid.Row="2" PanningMode="Both" Margin="0,0,0,0" VerticalScrollBarVisibility="Auto" Background="#FFA0A0A0" HorizontalScrollBarVisibility="Auto">
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Name="OpenFileButton" Grid.Column="1" Grid.Row="1" Height="80" Width="150" 
+                            BorderBrush="Transparent" Background="#f0f0f0"
+                            Click="OpenFileButton_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Image/OpenFile.png" Width="48" Height="48"/>
+                            <TextBlock Margin="10" FontSize="14" Text="打开图片" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Image Name="MainImage" Grid.Column="1" Grid.Row="1" Stretch="Fill"/>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+        <Canvas>
+            <local:ResizePanel x:Name="resizePanel" 
+                               Height="80" Width="300" 
+                               Margin="280 60 0 0"
+                               Visibility="Collapsed"/>
+        </Canvas>
+    </Grid>
+</Window>

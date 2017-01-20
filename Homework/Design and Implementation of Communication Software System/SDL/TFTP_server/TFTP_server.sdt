@@ -1,0 +1,69 @@
+SDT-SYSTEM-4.4
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+SourceDirectory=%unconnected%
+TargetDirectory=%unconnected%
+[DIAGRAMS]
+0 16 ACKError ACKError.msc 0 0 - ""
+0 16 ACKLost_R ACKLost.msc 0 0 - ""
+0 16 ACKLost_W ACKLost_W.msc 0 0 - ""
+0 16 DATALost_R DATALost.msc 0 0 - ""
+0 16 DATALost_w DATALost_w.msc 0 0 - ""
+0 16 DATASeqWrong DATASeqWrong.msc 0 0 - ""
+0 16 ErrorEnd ErrorEnd.msc 0 0 - ""
+0 16 FileReadOK FileReadOK.msc 0 0 - ""
+0 16 FileWriteOK FileWriteOK.msc 0 0 - ""
+0 23 "SDL Design for server" "" 0 0 0 ""
+0 11 data_def data_def.sun 0 1479992964 data_def ""
+0 1 server_sys server_sys.ssy 0 1479995499 server_sys ""
+1 2 server_block server_block.sbk 0 1483603353 server_block ""
+2 5 server_com server_com.spr 0 1479996579 server_com ""
+3 6 PlusOne PlusOne.spd 0 1384397356 PlusOne ""
+3 6 FileClose FileClose.spd 0 1479992884 FileClose ""
+3 6 FileWrite FileWrite.spd 0 1479993030 FileWrite ""
+3 6 FileRead FileRead.spd 0 1479992884 FileRead ""
+3 6 FileOpen FileOpen.spd 0 1479992846 FileOpen ""
+2 5 server_listen server_listen.spr 0 1483617409 server_listen ""
+0 23 "State Chart" "" 0 0 0 ""
+[VIEWOPTIONS]
+ShowDirectories=True
+ShowLongMenus=True
+[ANALYSEROPTIONS]
+ASN1KeywordFile=False
+ASN1Parameter=False
+CoderBufferInSDL=Octet-String
+Filter=False
+InstanceFile=False
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[STATEMATRIXOPTIONS]
+[INDEXOPTIONS]
+ShowSelectedTypes=True
+ShowSelectedUses=True
+ShowSelectedDiagrams=True
+FilterTypes=
+FilterUses=
+FilterDiagrams=
+NameFirst=True
+IndexAppearance=
+[PACKAGEGENERATOROPTIONS]
+DuplicateFile=
+[MAKEOPTIONS]
+CCompilerDriver=False
+Kernel=SCTAMDEBCOM
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterFile=""
+PrintFrom=0
+PrintTo=0
+PrintToFile=False
