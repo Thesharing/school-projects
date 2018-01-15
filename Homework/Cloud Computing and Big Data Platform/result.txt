@@ -1,0 +1,54 @@
+In Docker:
+
+Dist-keras-CNN
+553.823
+0.9867
+
+Dist-keras-MLP
+212.456
+0.9796
+
+BigDL-CNN
+488.839
+0.9896
+
+BigDL-MLP
+83.323
+0.9777
+
+Keras-CNN
+760
+0.9878
+
+Keras-MLP
+31
+0.9815
+
+On local computer:
+
+Keras-CNN-GPU
+250
+0.9904
+
+Keras-MLP-GPU
+21
+0.9819
+
+Keras-CNN-CPU
+614
+0.9900
+
+Keras-MLP-CPU
+30
+0.9802
+
+/home/thesharing/anaconda3/lib/python3.6/importlib/_bootstrap.py:219: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+2017-12-18 21:34:10.661448: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+
+Keras-CNN-Compiled
+444
+0.9905
+
+Keras-MLP-Compiled
+20
+0.9799

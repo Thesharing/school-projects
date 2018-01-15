@@ -27,6 +27,8 @@
      * [自然语言处理](#自然语言处理)
      * [数字媒体内容综合设计与实验](#数字媒体内容综合设计与实验)
      * [通信软件综合设计与实验](#通信软件综合设计与实验)
+     * [机器学习](#机器学习)
+     * [云计算与大数据平台](#云计算与大数据平台)
 
 # 课程项目
 
@@ -252,3 +254,17 @@
 * TFTP协议的SDL设计和C语言实现
 
 [查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Design%20and%20Implementation%20of%20Communication%20Software%20System)
+
+##机器学习
+
+* Multiboost实现
+* 证明条件随机场模型学习的梯度下降法
+* 频繁模式挖掘 (FP-Growth) 用于分析DBLP数据库
+
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Machine%20Learning)
+
+## 云计算与大数据平台
+
+* 使用 [Keras](https://github.com/keras-team/keras)、[Distributed Keras](https://github.com/cerndb/dist-keras) 和 [BigDL](https://github.com/intel-analytics/BigDL) 在 [MNIST](http://yann.lecun.com/exdb/mnist/) 数据集上实现简单的MLP和CNN模型并对比
+
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Cloud%20Computing%20and%20Big%20Data%20Platform)
