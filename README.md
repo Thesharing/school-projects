@@ -255,7 +255,7 @@
 
 [查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Design%20and%20Implementation%20of%20Communication%20Software%20System)
 
-##机器学习
+## 机器学习
 
 * Multiboost实现
 * 证明条件随机场模型学习的梯度下降法
