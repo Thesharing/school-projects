@@ -1,0 +1,5 @@
+jieba
+nltk
+scikit-learn
+pandas
+gensim
