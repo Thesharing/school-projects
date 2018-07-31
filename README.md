@@ -29,6 +29,7 @@
      * [机器学习](#机器学习)
      * [算法分析与复杂性理论](#算法分析与复杂性理论)
      * [云计算与大数据平台](#云计算与大数据平台)
+     * [语义计算与知识检索](#语义计算与知识检索)
 
 # 课程项目
 
@@ -277,3 +278,11 @@
 * 使用 [Keras](https://github.com/keras-team/keras)、[Distributed Keras](https://github.com/cerndb/dist-keras) 和 [BigDL](https://github.com/intel-analytics/BigDL) 在 [MNIST](http://yann.lecun.com/exdb/mnist/) 数据集上实现简单的MLP和CNN模型并对比
 
 [查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Cloud%20Computing%20and%20Big%20Data%20Platform)
+
+## 语义计算与知识检索
+
+* 词语相似度计算
+* Twitter情感分析
+* DBQA
+
+[查看更多](https://github.com/Thesharing/school-projects/tree/master/Homework/Semantic%20Computing%20and%20Knowledge%20Retrieval)
